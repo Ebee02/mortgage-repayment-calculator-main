@@ -10,7 +10,9 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Frontend Mentor | Mortgage repayment calculator</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,29 +26,105 @@
       }
     </style>
   </head>
-  <body>
-    Mortgage Calculator Clear All Mortgage Amount Mortgage Term Interest Rate
-    Mortgage Type Repayment Interest Only Calculate Repayments
+  <body class="flex flex-col antialiased min-h-screen px-6">
+    <section class="main-section py-6">
+      <h1 class="text-2xl font-bold text-[#122f3f] mb-4">
+        Mortgage Calculator
+      </h1>
+      <a href="#" class="underline text-[#4e6e7e] font-medium">Clear All</a>
 
-    <!-- Empty results start -->
+      <form action="" class="mt-8 flex flex-col gap-8">
+        <div>
+          <label
+            for="mortgage-amount"
+            class="font-medium text-lg text-[#4e6e7e]"
+            >Mortgage Amount</label
+          >
+          <input
+            id="mortgage-amount"
+            type="number"
+            class="w-full mt-2 p-3 border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300"
+          />
+        </div>
+        <div>
+          <label for="mortgage-term" class="font-medium text-lg text-[#4e6e7e]"
+            >Mortgage Term</label
+          >
+          <input
+            id="mortgage-term"
+            type="number"
+            class="w-full mt-2 p-3 border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300"
+          />
+        </div>
+        <div>
+          <label for="interest-rate" class="font-medium text-lg text-[#4e6e7e]"
+            >Interest Rate</label
+          >
+          <input
+            id="interest-rate"
+            type="number"
+            class="w-full mt-2 p-3 border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300"
+          />
+        </div>
+        <div>
+          <label for="mortgage-type" class="font-medium text-lg text-[#4e6e7e]"
+            >Mortgage Type</label
+          >
+          <div
+            class="flex items-center mb-4 w-full mt-2 p-3 border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300"
+          >
+            <input
+              id="default-radio-1"
+              type="radio"
+              value=""
+              name="default-radio"
+              class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300"
+            />
+            <label
+              for="default-radio-1"
+              class="ms-2 text-sm font-bold text-[#122f3f] text-lg"
+              >Repayment</label
+            >
+          </div>
+          <div
+            class="flex items-center w-full mt-2 p-3 border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300"
+          >
+            <input
+              checked
+              id="default-radio-2"
+              type="radio"
+              value=""
+              name="default-radio"
+              class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300"
+            />
+            <label
+              for="default-radio-2"
+              class="ms-2 text-sm font-bold text-[#122f3f] text-lg"
+              >Interest Only</label
+            >
+          </div>
+        </div>
 
-    Results shown here Complete the form and click “calculate repayments” to see
-    what your monthly repayments would be.
+        <button
+          type="submit"
+          class="w-full py-3 rounded-full cursor-pointer font-bold bg-[#d7da2f]"
+        >
+          Calculate Repayments
+        </button>
+      </form>
 
-    <!-- Empty results end -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </section>
 
-    <!-- Completed results start -->
-
-    Your results Your results are shown below based on the information you
-    provided. To adjust the results, edit the form and click “calculate
-    repayments” again. Your monthly repayments Total you'll repay over the term
-
-    <!-- Completed results end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <section>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+      provident mollitia, quos assumenda natus id eum officia distinctio
+      quisquam, sed amet quod sit rerum, atque placeat eligendi quae perferendis
+      earum!
+    </section>
   </body>
 </html>
