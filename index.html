@@ -38,13 +38,15 @@
           <label
             for="mortgage-amount"
             class="font-medium text-lg text-[#4e6e7e]"
-            >Mortgage Amount</label
           >
+            Mortgage Amount
+          </label>
           <div class="mt-2 w-full relative">
             <span
-              class="absolute h-full bg-[#d9e6ec] focus-within:bg-red-500 w-12 flex items-center justify-center rounded-l-md left-0 border-l border-y border-[#4e6e7e]"
+              class="absolute duration-150 transition-all h-full bg-[#d9e6ec] w-12 flex items-center justify-center rounded-l-md left-0 border-l border-y border-[#4e6e7e]"
             >
               <svg
+                id="euro"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -62,7 +64,7 @@
             <input
               id="mortgage-amount"
               type="number"
-              class="w-full p-3 pl-14 text-[#122f3f] font-semibold border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300 bg-inherit focus:outline-[#d7da2f]"
+              class="w-full p-3 pl-14 text-[#122f3f] font-semibold border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300 bg-inherit duration-150 transition-all focus:outline-[#d7da2f]"
             />
           </div>
         </div>
@@ -74,9 +76,10 @@
             <input
               id="mortgage-term"
               type="number"
-              class="w-full p-3 pr-24 font-semibold text-[#122f3f] border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300 bg-inherit"
+              class="w-full p-3 pr-24 font-semibold text-[#122f3f] border border-[#4e6e7e] rounded-md shadow-sm shadow-gray-300 bg-inherit duration-150 transition-all focus:outline-[#d7da2f]"
             />
             <button
+              id="mortgage-term-btn"
               type="button"
               class="absolute right-0 h-full font-bold tracking-wide bg-[#d9e6ec] text-[#4e6e7e] w-24 rounded-r-md border-r border-y border-[#4e6e7e]"
             >
@@ -143,7 +146,7 @@
 
         <button
           type="submit"
-          class="w-full flex items-center justify-center gap-2 py-3 rounded-full cursor-pointer font-bold bg-[#d7da2f]"
+          class="w-full flex items-center justify-center gap-2 py-3 rounded-full cursor-pointer font-bold bg-[#d7da2f] duration-200 transition-all hover:bg-[#122f3f] hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -369,5 +372,7 @@
         </p>
       </div>
     </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
